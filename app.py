@@ -38,7 +38,8 @@ def main() -> None:
             st.write('Type a gene standardize symbol and click "Subtmit" to start the Gene Ontology research')
 
     spacer = st.sidebar.html("<hr>")
-    link = st.sidebar.button(":arrow_upper_right: Learn more about Gene Ontology", type="tertiary")
+    link_url = "https://bioapps.org/gene-ontology-a-linguagem-universal-dos-genes/"  # Replace with the desired URL
+    st.sidebar.markdown(f"[:arrow_upper_right: Read our article about Gene Ontology]({link_url})", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
